@@ -1,0 +1,40 @@
+import pygame
+
+class Settings:
+    """A class to store all settings for the guessing game"""
+
+    def __init__(self):
+        """Initialize all the game settings"""
+        super().__init__()
+        # Screen settings
+        self.chances = 10
+        self.winCount = 0
+        self.pointCount = 0
+        self.errorcount = 0
+        self.screen_width = 1200
+        self.screen_height = 800
+        self.bg_color = (0, 0, 0)
+        self.bg_image = pygame.image.load('imgs/maingame.png')
+
+
+        # List of words for the game
+        self.word = ["Nigger"]
+        self.words = ["NEW YORK", "WASHINGTON","LAS VEGAS", "CALIFORNIA","TEXAS","MEXICO","LONDON","MANCHESTER","BRIGHTON",
+           "FLORIDA","ALABAMA","WEST VIRGINIA","ENGLAND","AMERICA","BRAZİL","CHILE","ARGENTINA","AUSTRALIA",
+           "TURKEY","ISTANBUL","GREECE","AFRICA","EGYPT","CHINA","JAPAN","JAPANESE",
+           "TABLE","PENCIL","NOTEBOOK","LAPTOP","MIRROR","PLASTIC","INTERNET","GAMING CONSOLE","PLAYSTATION",
+           "NINTENDO","NINTENDO SWITCH","APPLE","SAMSUNG","TABLET","BRUSH","WATER","PAPER","PAPER TOWEL",
+           "FLAG","GEORGE R R MARTIN","LEONARDO DICAPRIO","HARRY POTTER","PYTHON","PYGAME","CARL SAGAN","COSMOS",
+           "STEPHEN HAWKING","BRAD PITT","FELIX KJELLBERG","EINSTEIN","WORKOUT","MARIE CURIE","NEUROSCIENCE",
+           "ASTRONOMY","METEORITE","STAR","SOLAR SYSTEM","GALAXY","RANCH SAUCE","CHEDDAR SAUCE","BURGER",
+           "BURGER KING","MCDONALDS","CARLS JR","DEODORANT","DOSTOYEVSKI","GAME OF THRONES","COUNTRY","DRAGON",
+           "LIZARD","MARK ZUCKERBERG","DUMBLEDORE","GANDALF","MAGICIAN","GOOGLE","MICROSOFT","ARTIFICAL INTELLIGENCE",
+           "MACHINE LEARNING","HIGHSCHOOL","UNIVERSITY","OXFORD UNIVERSITY","CAMBRIDGE UNIVERSITY","COMPUTER SCIENCE",
+           "WINDOWS","LINUX","LEGEND OF ZELDA","SUPER MARIO ODYSSEY","LAST OF US","HEADPHONES","SONIC THE HEDGEHOG",
+           "ATTACK ON TITAN","ONE PIECE","TERMINATOR","AVENGERS","APARTMENT","ANGELINA JOLIE","JENNIFER LAWRENCE",
+           "CHRIS HEMSWORTH","CHRIS PRATT","STRANGER THINGS","FULLMETAL ALCHEMIST","ASSASSINS CREED","HEARTHSTONE",
+           "GABE NEWELL","PHOTOSHOP","VISUAL STUDIO","HANGMAN","XBOX ONE","HOW I MET YOUR MOTHER","DOG", "CAT",
+           "DEATH NOTE","NETFLIX AND CHILL","NETFLIX","ANIMATION","KEYBOARD AND MOUSE","CARBON","DIAMOND","MONA LISA",
+           "CRISTIANITY","JEWISH","MUSLIM","PRISONER","TWILIGHT","MAGIC","SPRAY","PAINT","GEORGE","JOHN","ADAM","JENNA",
+           "MARK","BOW","ARROW","WATER BOTTLE"]
+
